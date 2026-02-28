@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d876cb, #6fdcb4, #67878b);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    color: rgb(18, 18, 18);
+    margin-top: 20px;
+    font-size: 32px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+
+.controls {
+    margin: 20px;
+}
+
+
+select, button {
+    padding: 10px 15px;
+    margin: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button {
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.station-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+    transition: 0.3s ease;
+}
+
+.station-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+
+.available {
+    background: linear-gradient(45deg, #5a3fbb, #2c455f);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(16, 231, 127, 0.6);
+}
+
+
+.busy {
+    background: linear-gradient(45deg, #ff0000, #ff7300);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(173, 12, 12, 0.6);
+}
+
+
+.loading {
+    background: linear-gradient(45deg, #cf6ca3, #9e3d93);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
