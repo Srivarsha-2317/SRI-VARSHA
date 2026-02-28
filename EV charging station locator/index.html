@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EV Charging Station Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>EV Charging Station Finder</h1><br><br><br>
+
+    <div class="controls">
+        <label>Select City:</label>
+        <select id="citySelect" onchange="updateAreaDropdown()">
+            <option value="">--Select City--</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Erode">Erode</option>
+            <option value="Salem">Salem</option>
+            <option value="Krishnagiri">krishnagiri</option>
+
+        </select>
+
+        <label>Select Area:</label>
+        <select id="areaSelect">
+        <option value="">--Select Area--</option>
+        </select>
+        <br><br>
+        <button onclick="findMyStation()">Show the Stations</button><br><br>
+        <button onclick="refreshAvailability()">Refresh Availability</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
